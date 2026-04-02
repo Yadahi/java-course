@@ -58,8 +58,11 @@ public class DisplayPanel extends JPanel {
         animalDescriptionInput = new JTextArea();
         animalDescriptionInput.setFont(MY_FONT);
         animalDescriptionInput.setBounds(50, 400, 400, 120);
+        // Text automatically wraps to the next line
         animalDescriptionInput.setLineWrap(true);
+        // When wrapping occurs it breaks at word boundaries
         animalDescriptionInput.setWrapStyleWord(true);
+        // User can't type into or modify the text in the text area
         animalDescriptionInput.setEditable(false);
 
         // Adding fields to panel

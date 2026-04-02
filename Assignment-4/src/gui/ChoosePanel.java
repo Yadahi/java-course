@@ -52,7 +52,7 @@ public class ChoosePanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Each button creates its animal and notifies the handler
-                Dog dog = new Dog("Dog", 100, "home", false, "Husky");
+                Dog dog = new Dog("Dog", 200, "home", false, "Husky");
                 handler.onAnimalSelected(dog);
             }
         });
@@ -60,7 +60,7 @@ public class ChoosePanel extends JPanel {
         catBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Cat cat = new Cat("Cat", 100, "home", false, 20);
+                Cat cat = new Cat("Cat", 70, "home", false, 10);
                 handler.onAnimalSelected(cat);
             }
         });
@@ -68,7 +68,7 @@ public class ChoosePanel extends JPanel {
         lionBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Lion lion = new Lion("Lion", 100, "home", false, 100);
+                Lion lion = new Lion("Lion", 800, "home", false, 100);
                 handler.onAnimalSelected(lion);
             }
         });
